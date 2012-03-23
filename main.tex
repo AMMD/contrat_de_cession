@@ -1,0 +1,484 @@
+% Contrat de session
+%
+% Fichier : $HeadURL$
+% Date    : $Date$
+% Auteur  : Gregory DAVID
+%%
+\documentclass[a4paper,10pt]{article}
+
+% Paquets
+\usepackage[francais]{babel}
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{layout}
+\usepackage{vmargin}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{eurosym}
+\usepackage{ifthen}
+
+\usepackage{svn}
+
+\SVN $Id$
+\SVN $Date$
+\SVN $Revision$
+\SVN $Author$
+\SVN $HeadURL$
+
+\include{config}
+
+% Marges
+\setmarginsrb{1cm}{1cm}{1cm}{1cm}{2em}{0.5cm}{1em}{0.5cm}
+
+% Titre
+\title{Contrat de cession du droit d'exploitation d'un spectacle n°\NUMBERCONTRAT{}}
+\author{\AMMDlong}
+
+% Tripartite
+\newcommand{\PR}{\textbf{\textsc{Le Tourneur}}}
+\newcommand{\duPR}{\textbf{\textsc{du Tourneur}}}
+\newcommand{\auPR}{\textbf{\textsc{au Tourneur}}}
+\newcommand{\OR}{\textbf{\textsc{L'Organisateur}}}
+\newcommand{\AR}{\textbf{\textsc{L'Artiste}}}
+
+% Chemin des images
+%\graphicspath{{Techbands/\BANDNAME{}}}
+
+% R\'e\'ecriture des sections
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+	{0.6cm}%
+	{0.2cm}%
+	{\noindent\large\bfseries\scshape Article }}
+\renewcommand\subsection{\@startsection{subsection}{2}{1em}%
+	{0.24cm}%
+	{-0.5cm}%
+	{\bfseries\scshape}}
+\makeatother
+\renewcommand\thesubsection{\thesection.\Roman{subsection})}
+
+% Ent\^ete et pied de page
+\lhead{\AMMDlong{} -- Cces\NUMBERCONTRAT{}}
+\chead{\BANDNAME{}}
+\rhead{\today}
+\rfoot{Contrat de cession du droit d'exploitation d'un spectacle v2.0 -- \thepage/\pageref{LastPage}}
+\cfoot{}
+\pagestyle{fancy}
+
+% Document
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+{
+  \noindent\large\textbf{\textsc{Entre les soussign\'es}}
+\vspace{0.3cm}
+}
+
+\noindent\emph{\AMMDlong{}}\\
+\ADRAMMD{},\\
+F-\CPAMMD{} \VILLEAMMD{}\\
+\emph{\TELAMMD{}}\\
+Repr\'esent\'ee par \emph{\PRESIDENTAMMD}, en sa qualit\'e de \emph{pr\'esident\HorF{}}.\\
+Ci-apr\`es d\'enomm\'e \PR\ d'une part,\\
+
+et\\
+
+\noindent\RAISONSOCIALE{}\newline
+\ADRESSE{}\newline
+\TELEPHONE{}\newline
+\SIRET{}\newline
+\ENTREPRENEUR{}
+\hfill \CAT{}\newline
+\noindent Repr\'esent\'e par \emph{\REPRESENTANT{}}, en sa qualit\'e de \emph{\QUALITE{}}.\\
+Ci-apr\`es d\'enomm\'e \OR\ d'autre part.\\
+\vspace{.5cm}
+\begin{center}
+  \large
+  \textbf{\textsc{Il est expos\'e ce qui suit}}
+\end{center}
+
+\PR\ dispose des accords et d\'erogations des ayants--droits
+\emph{\PAYS{}} sur tout le contenu des \oe uvres interpr\'et\'ees dans
+le cadre du spectacle suivant, pour lequel il s'est assur\'e le concours
+des artistes et des intervenants n\'ecessaires \`a sa pr\'esentation au public :
+\begin{center}
+  \textbf{\textsc{\NOMSPECTACLE{}}}
+\end{center}
+Les accords et d\'erogations sont d\'efinies suivant la licence
+\emph{\LICENCETYPE{}}. Un exemplaire de cette licence est disponible en
+annexe \ref{sec:licence} du pr\'esent contrat.
+
+\OR\ d\'eclare conna\^itre et accepter le contenu du spectacle pr\'e-cit\'e.
+\OR\ s'est assur\'e de la disponibilit\'e de la salle
+\emph{\NOMADRSALLE{}} dont \PR\ d\'eclare avoir pris connaissance et
+accepter les caract\'eristiques techniques.
+
+\vspace{.5cm}
+\begin{center}
+  \large
+  \textbf{\textsc{Ceci expos\'e, il est convenu ce qui suit}}
+\end{center}
+
+\section{Objet}
+\label{sec:objet}
+\PR\ s'engage \`a donner, dans les conditions d\'efinies ci--apr\`es, et
+dans le cadre du pr\'esent contrat de cession du droit d'exploitation
+du spectacle \emph{\NBREPR{}} repr\'esentation\ifthenelse{\NBREPR>1}{s}{} sur le lieu
+pr\'e-cit\'e, le \emph{\DATEREP{}} \`a \emph{\HEUREREP{}}.
+
+\section{Droits d'auteurs et droits voisins}
+\label{sec:drm}
+Les accords et d\'erogations d'exploitation de l'image, du logo et des
+productions sonores et visuelles du spectacle, de ses personnages, et
+des artistes le pr\'esentant sont d\'efinies suivant la licence \emph{\LICENCETYPE{}}.
+
+\section{Obligations \duPR}
+\label{sec:oblig_pr}
+
+\subsection{Spectacle}
+\label{sec:oblig_pr:sub:spectacle}
+\PR\ fournira le spectacle, d'une dur\'ee d'environ \emph{\DUREESPECTACLE{}}
+minutes hors entracte et premi\`ere partie (s'il y a lieu), enti\`erement
+mont\'e et assumera la responsabilit\'e artistique de la
+repr\'esentation.
+
+En sa qualit\'e d'employeur, il assurera les r\'emun\'erations, charges
+sociales et fiscales comprises, de son personnel attach\'e au
+spectacle.
+
+\subsection{Mat\'eriels et fournitures}
+\label{sec:oblig_pr:sub:matos_fournitures}
+\PR\ fournira tous les \'el\'ements de d\'ecors, costumes, meubles et
+accessoires, et d'une mani\`ere g\'en\'erale, tous les \'el\'ements artistiques
+n\'ecessaires \`a la repr\'esentation du spectacle autres que ceux
+\'eventuellement mis \`a la charge de \OR\ \`a
+l'Art. \ref{sec:oblig_or:sub:gen} du pr\'esent contrat.
+
+\subsection{Transports}
+\label{sec:oblig_pr:sub:transports}
+\PR\ se charge de choisir et d'organiser le transport des personnes et
+du mat\'eriel attach\'es au spectacle et effectuera les \'eventuelles
+formalit\'es douani\`eres dont il supportera le co\^ut. Les frais financiers
+aff\'erents seront \`a la charge de \OR\ selon les termes de
+l'Art. \ref{sec:heb_rest_transp} du pr\'esent contrat.
+
+\subsection{Conditions techniques}
+\label{sec:oblig_pr:sub:cond_techniques}
+\PR\ fournira en annexe \ref{sec:techband} du pr\'esent contrat un avenant pr\'ecisant
+les conditions techniques g\'en\'erales pr\'evisionnelles et les conditions
+de cantine et de restauration de son personnel sur le lieu de
+repr\'esentation. \OR\ d\'eclare en avoir pris connaissance et en
+accepter l'ensemble des clauses.
+
+
+\subsection{Publicit\'e}
+\label{sec:oblig_pr:sub:publicite}
+\PR\ fournira au plus tard le \emph{\DATEPUB{}} les \'el\'ements n\'ecessaires \`a
+la publicit\'e du spectacle et notamment
+\begin{itemize}
+\item \NBAFFICHES{} affiche\ifthenelse{\NBAFFICHES>1}{s}{},
+\ifthenelse{\NBFLYERS>0}{\item \NBFLYERS{} flyer\ifthenelse{\NBFLYERS>1}{s}{},}{}
+\item \NBPRESSBOOK{} dossier\ifthenelse{\NBPRESSBOOK>1}{s}{} de presse,
+\item \NBPHOTOS{} photo\ifthenelse{\NBPHOTOS>1}{s}{}.
+\end{itemize}
+
+\subsection{Promotion}
+\label{sec:oblig_pr:sub:promo}
+\PR\ s'engage \`a communiquer, dans les meilleurs d\'elais, les accords
+promotionnels de ses partenaires media. \OR\ sera tenu de se conformer
+aux accords conclus entre \PR\ et ses partenaires media.
+
+\subsection{S\'ecurit\'e}
+\label{sec:oblig_pr:sub:secu}
+\PR\ s'engage \`a respecter et/ou \`a faire respecter la l\'egislation et la
+r\'eglementation en vigueur relatives \`a la s\'ecurit\'e du spectacle qu'il fournit.
+
+\subsection{TVA}
+\label{sec:oblig_pr:sub:tva}
+Sociale ou pas, \PR\ n'est pas assujetti \`a la TVA (Art. 261-7-1e du CGI).
+
+
+\section{Obligations de \OR}
+\label{sec:oblig_or}
+
+\subsection{G\'en\'eralit\'es}
+\label{sec:oblig_or:sub:gen}
+\OR\ fournira le lieu de repr\'esentation en ordre de marche, y compris
+le personnel n\'ecessaire au d\'echargement et au rechargement, au montage
+et au d\'emontage et au service des repr\'esentations. Il fournira le
+mat\'erial suivant :
+\MATOS{}
+Il assurera, en outre, le service g\'en\'eral du lieu : location, accueil,
+billetterie, encaissement et comptabilit\'e des recettes et service de
+s\'ecurit\'e \'eventuel, en se conformant \`a la l\'egislation et \`a la
+r\'eglementation en vigueur.
+
+Il s'acquittera de toutes les d\'eclarations
+et taxes aff\'erentes au lieu de repr\'esentation.
+
+En sa qualit\'e d'employeur, il assumera les r\'emun\'erations, charges
+sociales et fiscales comprises, de son personnel.
+
+Le lieu de repr\'esentation ne pourra \^etre modifi\'e par \OR\ sans
+l'accord \'ecrit \duPR .
+
+\subsection{Jauge}
+\label{sec:oblig_or:sub:jauge}
+\OR\ s'engage \`a ce que le nombre des spectateurs admis dans ce lieu
+soit strictement inf\'erieur aux quota d\'efinis dans les prescriptions de
+s\'ecurit\'e d\'etermin\'ees par la commission de s\'ecurit\'e comp\'etente, soit
+\ifthenelse{\NBPERSASS>0}
+    {\emph{\NBPERSASS{}} places assises}
+    {}
+\ifthenelse{\NBPERSASS>0\AND\NBPERSDEBOUT>0}
+    { et }
+    {}
+\ifthenelse{\NBPERSDEBOUT>0}
+    {\emph{\NBPERSDEBOUT{}} places debouts}
+    {}.
+
+D'une mani\`ere g\'en\'erale, il s'engage \`a respecter et/ou \`a faire
+respecter la l\'egislation et la r\'eglementation en vigueur relatives \`a
+la s\'ecurit\'e.
+
+\subsection{Billetterie}
+\label{sec:oblig_or:sub:billetterie}
+
+\OR\ sera responsable de l'\'etablissement de la billetterie et en
+supportera le co\^ut. Il sera \'egalement responsable de sa mise en vente,
+de l'encaissement de la recette correspondante et de la mise en place
+des services et personnels de contr\^ole.
+
+Dans le cas o\`u l'image et/ou le logo du spectacle, de ses personnages ou
+de ses artistes serait reproduit sur les billets, les conditions de
+propagation de la \emph{\LICENCETYPE{}} s'appliqueront aux visuels des
+billets.
+
+\subsection{Autorisations}
+\label{sec:oblig_or:sub:autorisations}
+\OR\ sera responsable de la demande et de l'obtention des \'eventuelles
+autorisations administratives relatives \`a la repr\'esentation. Il
+communiquera \auPR\ lesdites autorisations avant le
+spectacle. Il s'assurera, par ailleurs, de la mise en place des
+services de secours m\'edical et, dans le cas d'un spectacle en
+ext\'erieur, d'am\'enagements de la circulation automobile.
+
+\subsection{Service de s\'ecurit\'e}
+\label{sec:oblig_or:sub:serv_secu}
+\OR\ s'engage \`a mettre en place un service de s\'ecurit\'e en fonction du
+lieu de spectacle et des perturbations susceptibles de se produire \`a
+l'occasion de la repr\'esentation.
+
+\OR\ devra veiller \`a ce que les membres de son service d'ordre
+r\'eservent le meilleur accueil au public et n'usent de la force qu'en
+cas de danger manifeste envers les spectateurs, le personnel du
+spectacle ou les artistes. \PR\ se r\'eserve le droit d'interrompre ou
+d'annuler une repr\'esentation s'il est t\'emoin d'une agression
+injustifi\'ee de la part d'un membre du service d'ordre.
+
+\subsection{Publicit\'e}
+\label{sec:oblig_or:sub:publicite}
+En mati\`ere de publicit\'e, \OR\ s'efforcera de respecter l'esprit
+g\'en\'eral de la documentation fournie par \PR\ et observera
+scrupuleusement les mentions obligatoires. Dans le cas o\`u l'image
+et/ou le logo du spectacle, de ses personnages ou de ses artistes
+serait reproduit sur l'un des visuels de publicit\'e, les conditions de
+propagation de la \emph{\LICENCETYPE{}} s'appliqueront auxdits visuels.
+
+\subsection{Promotion}
+\label{sec:oblig_or:sub:promotion}
+Aucune enseigne de partenaires m\'ediatiques ou commerciaux ne pourra
+appara\^itre devant et dans le lieu de repr\'esentation, et en particulier
+sur la sc\`ene ou sur les enceintes de diffusion, autre que celles
+contractuellement agr\'e\'ees par \PR .
+
+
+\subsection{Invitations}
+\label{sec:oblig_or:sub:invit}
+\OR\ s'engage \`a mettre \`a la disposition \duPR\ \emph{\NBPLACEEX{}} places
+exon\'er\'ees pour \emph{\ifthenelse{\NBREPR>1}{chacune des}{la}} repr\'esentation\ifthenelse{\NBREPR>1}{s}{} objet du
+pr\'esent contrat.
+
+
+\section{H\'ebergement -- Restauration -- Transports}
+\label{sec:heb_rest_transp}
+Les frais d'h\'ebergement, de restauration et de transport seront \`a la
+charge de \OR , suivant les modalit\'es suivantes :
+\begin{itemize}
+    \item [\emph{H\'ebergement}] \ifthenelse{\NBLITS>0}{\emph{\NBLITS{} lit\ifthenelse{\NBLITS>1}{s}{}} pour \emph{\NUITS{} nuit\'ee\ifthenelse{\NUITS>1}{s}{}}}{pas de prise en charge},
+    \item [\emph{Restauration}] \ifthenelse{\NBREPAS>0}{\emph{\NBREPAS{}} repas chaud\ifthenelse{\NBREPAS>1}{s}{}
+      complet\ifthenelse{\NBREPAS>1}{s}{}\footnotemark[1] par personne
+     (entr\'ee, plat principal, fromage, dessert, boissons)
+    pendant \emph{\JOURS{}} jour\ifthenelse{\JOURS>1}{s}{}}{pas de prise en charge}\footnotetext[1]{selon les conditions de caterings : v\'eg\'etarien},
+    \item [\emph{Transports}] \ifthenelse{\PRIXTRANSP>0}{location de voiture + frais d'esssence et de
+      p\'eage aller/retour pour le trajet \emph{\PRIXTRANSP{} \euro}}{pas de prise en charge}.
+\end{itemize}
+
+\section{Prix des places}
+\label{sec:prix_places}
+Les parties conviennent de fixer le prix des places comme suit
+\begin{itemize}
+\item Plein tarif : \emph{\PRIXPLACEPLEIN{} \euro}
+\item Tarif r\'eduit : \emph{\PRIXPLACESREDUIT{} \euro}
+\end{itemize}
+Il est entendu que le tarif r\'eduit sera appliqu\'e aux cat\'egories de
+personnes suivantes : \emph{\CATEGORIESREDUIT{}}
+
+\section{Prix de la prestation}
+\label{sec:prix_presta}
+\OR\ s'engage \`a verser \auPR , en contrepartie de la pr\'esente cession,
+sur pr\'esentation de facture, une somme totale de \emph{\PRIXPRESTA{} \euro}.
+
+\section{Modalit\'es de paiement}
+\label{sec:modalite_paiement}
+Le r\`eglement des sommes pr\'evues \`a l'Art. \ref{sec:prix_presta} sera
+effectu\'e le jour du spectacle avant la repr\'esentation par ch\`eque
+bancaire ou postal.
+
+\section{Ventes annexes}
+\label{sec:ventes_annexes}
+\OR\ fera son affaire des \'eventuelles ventes annexes (boissons,
+restauration, \dots) et en gardera le b\'en\'efice. Toutefois, il est
+convenu que les boissons devront \^etre vendues dans des verres en
+plastique ou carton (pas be bo\^ites ou de canettes en verre ou m\'etal).
+
+\PR\ fera son affaire des ventes li\'ees au spectacle, \`a ses personnages
+et/ou \`a ses artistes ou \`a leur image (albums, T-shirts, stickers,
+affiches, \dots) et en gardera le b\'en\'efice sauf accord particulier qui
+devra faire l'objet d'un avenant.
+
+
+\section{Montage -- D\'emontage}
+\label{sec:montage_demontage}
+\OR\ tiendra le lieu de spectacle \`a la disposition \duPR\ \`a partir du
+\DATEMONTAGE{} \`a \HEUREMONTAGE{} pour permettre d'effectuer le
+montage, les r\'eglages et d'\'eventuels raccords. Le d\'emontage et le
+rechargement seront \'effectu\'es le \DATEDEMONTAGE{} \`a partir de
+\HEUREDEMONTAGE{}.
+
+\section{Responsabilit\'es}
+\label{sec:resp}
+Chaque partie garantit l'autre partie contre tout recours des
+personnels, fournisseurs et prestataires dont elle a personnellement
+la charge au titre des obligations respectives d\'efinies au pr\'esent contrat.
+
+\section{Assurances}
+\label{sec:assurances}
+\PR\ est tenu d'assurer contre tous les risques pouvant subvenir \`a
+l'occasion des transports et entreposages ex\'ecut\'es entre deux
+repr\'esentations tout objet lui appartenant ou appartenant \`a son
+personnel. Il d\'eclare en outre avoir souscrit toutes les assurances
+n\'ecessaires \`a ses dispositifs techniques.
+
+\OR\ d\'eclare avoir souscrit les assurances n\'ecessaires \`a la couverture
+des risques li\'es \`a l'exploitation du spectacle dans son lieu,
+notamment en mati\`ere de responsabilit\'e civile. Il mettra \`a la
+disposition \duPR\ des loges fermant \`a cl\'e et sera responsable de la
+protection et du gardiennage de tout objet appartenant \auPR\ ou
+appartenant \`a son personnel.
+
+Dans le cas d'un spectacle en plein air, \OR\ s'engage \`a souscrire une
+assurance couvrant les risques d'intemp\'eries pour les frais incombant
+\`a chacun, \'etant entendu que cette assurance n\'ecessite une couverture
+de sc\`ene.
+
+\section{Enregistrement -- Diffusion}
+\label{sec:enregistrement}
+Conform\'ement \`a l'Art. \ref{sec:drm} du pr\'esent contrat, l'autorisation
+est donn\'ee d'enregistrer le spectacle, le reproduire, le diffuser,
+etc. Les conditions de propagations de la \LICENCETYPE{} s'appliqueront
+\`a tout enregistrement, photo, etc. du spectacle, de ses personnages
+et/ou de ses artistes. \OR\ devra mettre en \oe uvre tous les moyens et
+supports d'informations n\'ecessaires pour pr\'evenir le public des
+conditions d'utilisation de toute captation photographique, vid\'eo
+et/ou sonore des \oe uvres interpr\'et\'ees. En particulier, il affichera
+aux entr\'ees du spectacle des affiches de format A3 (minimum) contenant
+le texte transmis en annexe \ref{sec:texte_licence}.
+
+Il demeure entendu, si \PR\ envisage de proc\'eder \`a la captation et
+l'exploitation d'enregistrements sonores et/ou visuels de la
+repr\'esentation, qu'il sera en mesure de le faire \`a son seul arbitre et
+b\'en\'efice, ce dont \OR\ le garantit, en son nom et celui des salles
+retenues, ainsi que d'\'eventuels sous-traitants. \PR\ fera alors son
+affaire de toutes les d\'epenses aff\'erentes \`a cette captation.
+
+\section{Annulation de contrat}
+\label{sec:annulation}
+Le pr\'esent contrat se trouverait suspendu ou r\'esolu de plein droit et
+sans indemnit\'e d'aucune sorte, dans tous les cas reconnus de force
+majeure.
+
+Le d\'efaut ou le retrait des droits de repr\'esentation \`a la date
+d'ex\'ecution du pr\'esent contrat entra\^inerait sa r\'esolution de plein
+droit pour inex\'ecution de l'une de ses clauses essentielles.
+
+Toute annulation du fait de l'une ou l'autre des parties dans les
+quinze jours pr\'ec\'edant la date de la repr\'esentation entra\^inerait pour
+la partie d\'efaillante l'obligation de verser \`a l'autre une indemnit\'e
+calcul\'ee en fonction des frais effectivement engag\'es par cette
+derni\`ere \`a la date de rupture du contrat.
+
+\section{Litiges}
+\label{sec:litiges}
+En cas de litige sur l'interpr\'etation ou l'application du pr\'esent
+contrat, les parties conviennent de s'en remettre \`a d\'efaut d'un accord
+amiable, \`a l'appr\'eciation des tribunaux de \emph{LE MANS} (France).
+
+\vfill
+Fait \`a \VILLEAMMD{} (France), le \today\ en \NBEX{} exemplaire\ifthenelse{\NBEX>1}{s}{}.
+
+\begin{minipage}[h!]{0.5\linewidth}
+  \begin{center}
+    \PR
+  \end{center}
+\end{minipage}
+\begin{minipage}[h!]{0.5\linewidth}
+  \begin{center}
+    \OR
+  \end{center}
+\end{minipage}
+\vspace{6cm}
+
+\newpage
+\appendix
+% R\'e\'ecriture des sections pour les appendices
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+	{1cm}%
+	{0.2cm}%
+	{\noindent\large\bfseries\scshape Annexe }}
+\renewcommand\subsection{\@startsection{subsection}{2}{0.2em}%
+	{0.24cm}%
+	{0.1cm}%
+	{\large\bfseries\scshape}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{1em}%
+	{0.24cm}%
+	{-0.5cm}%
+	{\bfseries\scshape}}
+\makeatother
+\renewcommand\thesubsection{\arabic{subsection}}
+
+\section{\LICENCETYPE{}}
+\label{sec:licence}
+\INPUTLICENCE{}
+
+\section{Texte \`a l'intention du public}
+\label{sec:texte_licence}
+\INPUTTEXTELICENCE{}
+
+\section{Conditions techniques n\'ecessaires \`a l'interpr\'etation du spectacle}
+\label{sec:techband}
+\TECHBAND{}
+
+%\section{Conditions techniques du lieu de repr\'esentation}
+%\label{sec:techsalle}
+%---INPUTTECHSALLE---
+
+\section{Listes des pi\`eces jou\'ees et des auteurs}
+\SETLIST{}
+
+
+\end{document}
