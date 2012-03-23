@@ -288,11 +288,12 @@ sur la sc\`ene ou sur les enceintes de diffusion, autre que celles
 contractuellement agr\'e\'ees par \PR .
 
 
-\subsection{Invitations}
+\ifthenelse{\NBPLACEEX>0}
+{\subsection{Invitations}
 \label{sec:oblig_or:sub:invit}
-\OR\ s'engage \`a mettre \`a la disposition \duPR\ \emph{\NBPLACEEX{}} places
-exon\'er\'ees pour \emph{\ifthenelse{\NBREPR>1}{chacune des}{la}} repr\'esentation\ifthenelse{\NBREPR>1}{s}{} objet du
-pr\'esent contrat.
+\OR\ s'engage \`a mettre \`a la disposition \duPR\ \emph{\NBPLACEEX{}} place\ifthenelse{\NBPLACEEX>1}{s}{}
+exon\'er\'ee\ifthenelse{\NBPLACEEX>1}{s}{} pour \emph{\ifthenelse{\NBREPR>1}{chacune des}{la}} repr\'esentation\ifthenelse{\NBREPR>1}{s}{} objet\ifthenelse{\NBREPR>1}{s}{} du
+pr\'esent contrat.}{}
 
 
 \section{H\'ebergement -- Restauration -- Transports}
@@ -304,7 +305,7 @@ charge de \OR , suivant les modalit\'es suivantes :
     \item [\emph{Restauration}] \ifthenelse{\NBREPAS>0}{\emph{\NBREPAS{}} repas chaud\ifthenelse{\NBREPAS>1}{s}{}
       complet\ifthenelse{\NBREPAS>1}{s}{}\footnotemark[1] par personne
      (entr\'ee, plat principal, fromage, dessert, boissons)
-    pendant \emph{\JOURS{}} jour\ifthenelse{\JOURS>1}{s}{}}{pas de prise en charge}\footnotetext[1]{selon les conditions de caterings : v\'eg\'etarien},
+    sur \emph{\JOURS{}} jour\ifthenelse{\JOURS>1}{s}{}}{pas de prise en charge}\footnotetext[1]{selon les conditions de caterings : v\'eg\'etarien},
     \item [\emph{Transports}] \ifthenelse{\PRIXTRANSP>0}{location de voiture + frais d'esssence et de
       p\'eage aller/retour pour le trajet \emph{\PRIXTRANSP{} \euro}}{pas de prise en charge}.
 \end{itemize}
