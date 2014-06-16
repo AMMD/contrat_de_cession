@@ -4,20 +4,21 @@
 % Date    : $Date$
 % Auteur  : Gregory DAVID
 %%
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,10pt,oneside]{article}
 
 % Paquets
-\usepackage[francais]{babel}
+\usepackage[french]{babel}
 \usepackage{ucs}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[francais]{layout}
+\usepackage[french]{layout}
 \usepackage{vmargin}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{eurosym}
 \usepackage{ifthen}
+\usepackage[french]{varioref}
 
 \include{config}
 
@@ -25,7 +26,7 @@
 \setmarginsrb{1cm}{1cm}{1cm}{1cm}{2em}{0.5cm}{1em}{0.5cm}
 
 % Titre
-\title{Contrat de cession du droit d'exploitation d'un spectacle n°\NUMBERCONTRAT{}}
+\title{Contrat de cession du droit d'exploitation d'un spectacle \no \NUMBERCONTRAT{}}
 \author{\AMMDlong}
 
 % Tripartite
@@ -102,7 +103,7 @@ des artistes et des intervenants n\'ecessaires \`a sa pr\'esentation au public :
 \end{center}
 Les accords et d\'erogations sont d\'efinies suivant la licence
 \emph{\LICENCETYPE{}}. Un exemplaire de cette licence est disponible en
-annexe \ref{sec:licence} du pr\'esent contrat.
+annexe \vref{sec:licence} du pr\'esent contrat.
 
 \OR\ d\'eclare conna\^itre et accepter le contenu du spectacle pr\'e-cit\'e.
 \OR\ s'est assur\'e de la disponibilit\'e de la salle
@@ -148,7 +149,7 @@ spectacle.
 accessoires, et d'une mani\`ere g\'en\'erale, tous les \'el\'ements artistiques
 n\'ecessaires \`a la repr\'esentation du spectacle autres que ceux
 \'eventuellement mis \`a la charge de \OR\ \`a
-l'Art. \ref{sec:oblig_or:sub:gen} du pr\'esent contrat.
+l'Art. \vref{sec:oblig_or:sub:gen} du pr\'esent contrat.
 
 \subsection{Transports}
 \label{sec:oblig_pr:sub:transports}
@@ -156,11 +157,11 @@ l'Art. \ref{sec:oblig_or:sub:gen} du pr\'esent contrat.
 du mat\'eriel attach\'es au spectacle et effectuera les \'eventuelles
 formalit\'es douani\`eres dont il supportera le co\^ut. Les frais financiers
 aff\'erents seront \`a la charge de \OR\ selon les termes de
-l'Art. \ref{sec:heb_rest_transp} du pr\'esent contrat.
+l'Art. \vref{sec:heb_rest_transp} du pr\'esent contrat.
 
 \subsection{Conditions techniques}
 \label{sec:oblig_pr:sub:cond_techniques}
-\PR\ fournira en annexe \ref{sec:techband} du pr\'esent contrat un avenant pr\'ecisant
+\PR\ fournira en annexe \vref{sec:techband} du pr\'esent contrat un avenant pr\'ecisant
 les conditions techniques g\'en\'erales pr\'evisionnelles et les conditions
 de cantine et de restauration de son personnel sur le lieu de
 repr\'esentation. \OR\ d\'eclare en avoir pris connaissance et en
@@ -305,9 +306,9 @@ charge de \OR , suivant les modalit\'es suivantes :
 \begin{itemize}
     \item [\emph{H\'ebergement}] \ifthenelse{\NBLITS>0}{\emph{\NBLITS{} lit\ifthenelse{\NBLITS>1}{s}{}} pour \emph{\NUITS{} nuit\'ee\ifthenelse{\NUITS>1}{s}{}}}{pas de prise en charge},
     \item [\emph{Restauration}] \ifthenelse{\NBREPAS>0}{\emph{\NBREPAS{}} repas chaud\ifthenelse{\NBREPAS>1}{s}{}
-      complet\ifthenelse{\NBREPAS>1}{s}{}\footnotemark[1] par personne
+      complet\ifthenelse{\NBREPAS>1}{s}{} végétarien\ifthenelse{\NBREPAS>1}{s}{} par personne
      (entr\'ee, plat principal, fromage, dessert, boissons)
-    sur \emph{\JOURS{}} jour\ifthenelse{\JOURS>1}{s}{}}{pas de prise en charge}\footnotetext[1]{selon les conditions de caterings : v\'eg\'etarien},
+    sur \emph{\JOURS{}} jour\ifthenelse{\JOURS>1}{s}{}}{pas de prise en charge},
     \item [\emph{Transports}] \ifthenelse{\PRIXTRANSP>0}{location de voiture + frais d'esssence et de
       p\'eage aller/retour pour le trajet \emph{\PRIXTRANSP{} \euro}}{pas de prise en charge}.
 \end{itemize}
@@ -330,16 +331,16 @@ sur pr\'esentation de facture, une somme totale de \emph{\PRIXPRESTA{} \euro} ne
 
 \section{Modalit\'es de paiement}
 \label{sec:modalite_paiement}
-Le r\`eglement des sommes pr\'evues \`a l'Art. \ref{sec:prix_presta} sera
+Le r\`eglement des sommes pr\'evues \`a l'Art. \vref{sec:prix_presta} sera
 effectu\'e \ifthenelse{\equal{\PAIEMENTPRESTA}{cheque}}{le jour du spectacle avant la repr\'esentation par ch\`eque bancaire ou postal}{\PAIEMENTPRESTA{}}.
 
 \section{Ventes annexes}
 \label{sec:ventes_annexes}
 \OR\ fera son affaire des \'eventuelles ventes annexes (boissons,
 restauration, \dots) et en gardera le b\'en\'efice. Toutefois, il est
-convenu que les boissons pourront \^etre préférablement vendues dans
-des verres en plastique ou carton, et à défaut dans des bo\^ites ou
-des canettes en verre ou m\'etal. Par ailleurs, \OR\ décidera du lieu
+convenu que les boissons pourront \^etre pr\'ef\'erablement vendues dans
+des verres en plastique ou carton, et \`a d\'efaut dans des bo\^ites ou
+des canettes en verre ou m\'etal. Par ailleurs, \OR\ d\'ecidera du lieu
 de consommation de ces ventes annexes.
 
 \PR\ fera son affaire des ventes li\'ees au spectacle, \`a ses personnages
@@ -384,7 +385,7 @@ de sc\`ene.
 
 \section{Enregistrement -- Diffusion}
 \label{sec:enregistrement}
-Conform\'ement \`a l'Art. \ref{sec:drm} du pr\'esent contrat, l'autorisation
+Conform\'ement \`a l'Art. \vref{sec:drm} du pr\'esent contrat, l'autorisation
 est donn\'ee d'enregistrer le spectacle, le reproduire, le diffuser,
 etc. Les conditions de propagations de la \LICENCETYPE{} s'appliqueront
 \`a tout enregistrement, photo, etc. du spectacle, de ses personnages
@@ -393,7 +394,7 @@ supports d'informations n\'ecessaires pour pr\'evenir le public des
 conditions d'utilisation de toute captation photographique, vid\'eo
 et/ou sonore des \oe uvres interpr\'et\'ees. En particulier, il affichera
 aux entr\'ees du spectacle des affiches de format A3 (minimum) contenant
-le texte transmis en annexe \ref{sec:texte_licence}.
+le texte transmis en annexe \vref{sec:texte_licence}.
 
 Il demeure entendu, si \PR\ envisage de proc\'eder \`a la captation et
 l'exploitation d'enregistrements sonores et/ou visuels de la
@@ -422,7 +423,7 @@ derni\`ere \`a la date de rupture du contrat.
 \label{sec:litiges}
 En cas de litige sur l'interpr\'etation ou l'application du pr\'esent
 contrat, les parties conviennent de s'en remettre \`a d\'efaut d'un accord
-amiable, \`a l'appr\'eciation des tribunaux de compétents.
+amiable, \`a l'appr\'eciation des tribunaux comp\'etents.
 
 \vfill
 Fait \`a \VILLEAMMD{} (France), le \today\ en \NBEX{} exemplaire\ifthenelse{\NBEX>1}{s}{}.
