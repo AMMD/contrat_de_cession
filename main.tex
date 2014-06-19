@@ -238,18 +238,18 @@ D'une mani\`ere g\'en\'erale, il s'engage \`a respecter et/ou \`a faire
 respecter la l\'egislation et la r\'eglementation en vigueur relatives \`a
 la s\'ecurit\'e.
 
-\subsection{Billetterie}
-\label{sec:oblig_or:sub:billetterie}
+% \subsection{Billetterie}
+% \label{sec:oblig_or:sub:billetterie}
 
-\OR\ sera responsable de l'\'etablissement de la billetterie et en
-supportera le co\^ut. Il sera \'egalement responsable de sa mise en vente,
-de l'encaissement de la recette correspondante et de la mise en place
-des services et personnels de contr\^ole.
+% \OR\ sera responsable de l'\'etablissement de la billetterie et en
+% supportera le co\^ut. Il sera \'egalement responsable de sa mise en vente,
+% de l'encaissement de la recette correspondante et de la mise en place
+% des services et personnels de contr\^ole.
 
-Dans le cas o\`u l'image et/ou le logo du spectacle, de ses personnages ou
-de ses artistes serait reproduit sur les billets, les conditions de
-propagation de la \emph{\LICENCETYPE{}} s'appliqueront aux visuels des
-billets.
+% Dans le cas o\`u l'image et/ou le logo du spectacle, de ses personnages ou
+% de ses artistes serait reproduit sur les billets, les conditions de
+% propagation de la \emph{\LICENCETYPE{}} s'appliqueront aux visuels des
+% billets.
 
 % Il semblerait que cet article ne serve pas puisque l'autorisation
 % est donnee par la licence d'entrepreneur du spectacle.
@@ -305,10 +305,14 @@ Les frais d'h\'ebergement, de restauration et de transport seront \`a la
 charge de \OR , suivant les modalit\'es suivantes :
 \begin{itemize}
     \item [\emph{H\'ebergement}] \ifthenelse{\NBLITS>0}{\emph{\NBLITS{} lit\ifthenelse{\NBLITS>1}{s}{}} pour \emph{\NUITS{} nuit\'ee\ifthenelse{\NUITS>1}{s}{}}}{pas de prise en charge},
-    \item [\emph{Restauration}] \ifthenelse{\NBREPAS>0}{\emph{\NBREPAS{}} repas chaud\ifthenelse{\NBREPAS>1}{s}{}
-      complet\ifthenelse{\NBREPAS>1}{s}{} végétarien\ifthenelse{\NBREPAS>1}{s}{} par personne
-     (entr\'ee, plat principal, fromage, dessert, boissons)
-    sur \emph{\JOURS{}} jour\ifthenelse{\JOURS>1}{s}{}}{pas de prise en charge},
+    \item [\emph{Restauration}]
+    \ifthenelse{\NBREPAS>0}{\emph{\NBREPAS{}} repas
+      chaud\ifthenelse{\NBREPAS>1}{s}{}
+      complet\ifthenelse{\NBREPAS>1}{s}{}
+      végétarien\ifthenelse{\NBREPAS>1}{s}{} par personne (\NBBANDPERS{}
+      personne\ifthenelse{\NBBANDPERS>1}{s}{}) (entr\'ee, plat
+      principal, fromage, dessert, boissons) sur \emph{\JOURS{}}
+      jour\ifthenelse{\JOURS>1}{s}{}}{pas de prise en charge},
     \item [\emph{Transports}] \ifthenelse{\PRIXTRANSP>0}{location de voiture + frais d'esssence et de
       p\'eage aller/retour pour le trajet \emph{\PRIXTRANSP{} \euro}}{pas de prise en charge}.
 \end{itemize}
