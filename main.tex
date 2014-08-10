@@ -74,6 +74,7 @@
 \ADRAMMD{},\\
 F-\CPAMMD{} \VILLEAMMD{}\\
 \SIRETAMMD{}\newline
+\ENTREPRENEURAMMD{}\newline
 \emph{\TELAMMD{}}\\
 Repr\'esent\'ee par \emph{\REPRESENTANTAMMD}, en sa qualit\'e de \emph{\QUALITEREPRESENTANT{}}.\\
 Ci-apr\`es d\'enomm\'e \PR\ d'une part,\\
@@ -232,6 +233,9 @@ s\'ecurit\'e d\'etermin\'ees par la commission de s\'ecurit\'e comp\'etente, soi
     {}
 \ifthenelse{\NBPERSDEBOUT>0}
     {\emph{\NBPERSDEBOUT{}} places debouts}
+    {}
+\ifthenelse{\NBPERSDEBOUT<1\AND\NBPERSASS<1}
+    { non-connu (place extérieure) }
     {}.
 
 D'une mani\`ere g\'en\'erale, il s'engage \`a respecter et/ou \`a faire
