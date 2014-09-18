@@ -1,86 +1,117 @@
-\newcommand{\VILLEAMMD}{CONNERR\'E}
-\newcommand{\ADRAMMD}{Mairie,\\ Rue de l'Abreuvoir}
-\newcommand{\CPAMMD}{72160}
-\newcommand{\TELAMMD}{(+33)(0) 2 43 82 33 49}
-\newcommand{\REPRESENTANTAMMD}{Dimitri EVEN}
-\newcommand{\QUALITEREPRESENTANT}{président}
-\newcommand{\SIRETAMMD}{SIRET : 50334086100023}
-\newcommand{\HorF}{}
-\newcommand{\AMMDlong}{Amicale du Mekanik Metal Disco}
+%========================================
+% L'ORGANISATEUR
+%========================================
+\newcommand{\OrganisateurRaisonSociale}{Association Les Réseaux de la Création}
+\newcommand{\OrganisateurAdresse}{une rue}
+\newcommand{\OrganisateurCodePostal}{75000}
+\newcommand{\OrganisateurVille}{Paris}
+\newcommand{\OrganisateurPays}{France}
+\newcommand{\OrganisateurTelephone}{06XXXXXXXX}
+\newcommand{\OrganisateurRepresentantNom}{XXX}
+\newcommand{\OrganisateurRepresentantQualite}{Président}
+\newcommand{\OrganisateurNumeroSIRET}{SIREN : CHANGE-ME\newline NAF : CHANGE-ME}
+\newcommand{\OrganisateurLicencesEntrepreneur}{Licences : CHANGE-ME}
 
-\newcommand{\NUMBERCONTRAT}{20140906-49100}
-\newcommand{\BANDNAME}{groolot}
-\newcommand{\RAISONSOCIALE}{Maison Pour Tous Monplaisir}
-\newcommand{\ADRESSE}{3 rue de l'écriture\newline 49100 Angers}
-\newcommand{\TELEPHONE}{02 41 43 84 09}
-\newcommand{\SIRET}{SIREN : 321 580 433 000 19\newline NAF : 9499Z}
-\newcommand{\ENTREPRENEUR}{Licences : 1-1073320}
-\newcommand{\CAT}{}
-\newcommand{\REPRESENTANT}{CHANGE-ME}
-\newcommand{\QUALITE}{CHANGE-ME}
-\newcommand{\PAYS}{France}
-\newcommand{\NOMSPECTACLE}{Plébiscite -- \emph{Les Hommes construisent trop de murs et pas assez de ponts}}
-\newcommand{\DUREESPECTACLE}{15} % CHANGE-ME
-\newcommand{\NBBANDPERS}{2} % CHANGE-ME
-\newcommand{\LICENCETYPE}{Licence Art Libre 1.3 (LAL 1.3)}
-\newcommand{\INPUTLICENCE}{\input{lal}}
-\newcommand{\INPUTTEXTELICENCE}{\input{texte_lal}}
-\newcommand{\SETLIST}{
-%---SETLIST---
-\subsection{\OE uvres jou\'ees}
-\begin{enumerate}
-    \item \NOMSPECTACLE{} (15 minutes)
-\end{enumerate}
-\subsection{Auteurs}
-\begin{itemize}
-    \item Grégory \bsc{David} (n\'e le 10 mars 1980, \`a Bourges).
-\end{itemize}
-}
-\newcommand{\NOMADRSALLE}{MPT Monplaisir, 3 rue de l'Écriture, 49100 Angers - France}
-\newcommand{\NBREPR}{1} % CHANGE-ME
-\newcommand{\DATEREP}{6 septembre 2014}
-\newcommand{\HEUREREP}{12:00}
-\newcommand{\COMPLEMENTREP}{}
-% Date limite de fourniture de la publicite
-\newcommand{\DATEPUB}{11 juillet 2014}
-\newcommand{\NBAFFICHES}{0} % CHANGE-ME
-\newcommand{\NBFLYERS}{0} % CHANGE-ME
-\newcommand{\NBPRESSBOOK}{0} % CHANGE-ME
-\newcommand{\NBPHOTOS}{2} % CHANGE-ME
-\newcommand{\MATOS}{
-%---MATOS---
+%========================================
+% LE TOURNEUR
+%========================================
+\newcommand{\TourneurRaisonSociale}{Amicale du Mekanik Metal Disco}
+\newcommand{\TourneurAdresse}{Mairie,\newline Rue de l'Abreuvoir}
+\newcommand{\TourneurCodePostal}{72160}
+\newcommand{\TourneurVille}{CONNERR\'E}
+\newcommand{\TourneurPays}{France}
+\newcommand{\TourneurTelephone}{(+33)(0) 2 43 82 33 49}
+\newcommand{\TourneurRepresentantNom}{Dimitri EVEN}
+\newcommand{\TourneurRepresentantQualite}{président}
+\newcommand{\TourneurNumeroSIRET}{SIRET : 50334086100023}
+\newcommand{\TourneurLicencesEntrepreneur}{}
+
+%========================================
+% LE GROUPE
+%========================================
+\newcommand{\GroupeNom}{groolot}
+\newcommand{\GroupeNombrePersonnes}{2}
+\newcommand{\GroupeElementsTechniques}{ L'\'equipe au complet de
+  \emph{\GroupeNom{}} pour le spectacle \emph{\SpectacleNom{}} est de
+  \GroupeNombrePersonnes{}
+  personne\ifthenelse{\GroupeNombrePersonnes>1}{s}{}.  Se r\'ef\'erer
+  \`a la fiche technique.  }
+
+%========================================
+% LE SPECTACLE
+%========================================
+\newcommand{\SpectacleNom}{Plébiscite -- \emph{Les Hommes construisent trop de murs et pas assez de ponts.}}
+\newcommand{\SpectacleDureeMinutes}{15}
+\newcommand{\SpectacleLicenceLibreNom}{Licence Art Libre 1.3 (LAL 1.3)}
+\newcommand{\SpectacleLicenceLibre}{\input{lal}}
+\newcommand{\SpectacleLicenceLibreTexteReferenceSpectateur}{\input{texte_lal}}
+\newcommand{\SpectacleContenuJoue}{
+%---SpectacleContenuJoue---
+  \subsection{\OE uvres jou\'ees}
+  \begin{enumerate}
+      \item \SpectacleNom{}, (15 minutes).
+  \end{enumerate}
+  \subsection{Auteurs}
   \begin{itemize}
-      \item 2 x DI
-      \item 2 x JackTRS/JackTRS
-      \item 1 x syst\`eme de diffusion avec caisson de basses, style
-      NEXO 2xPS15 + 1xSR15
-      \item 6 x PAR 64 (dont : 2 sur platine, 2 sur pied, 2 sur gril)
+      \item Grégory \textsc{David} (n\'e le 10 mars 1980, \`a Bourges).
   \end{itemize}
 }
-\newcommand{\NBPERSASS}{150} % CHANGE-ME
-\newcommand{\NBPERSDEBOUT}{0} % CHANGE-ME
-\newcommand{\NBPLACEEX}{0} % CHANGE-ME
-\newcommand{\NBLITS}{0} % CHANGE-ME
-\newcommand{\NUITS}{0} % CHANGE-ME
-\newcommand{\NBREPAS}{2} % CHANGE-ME
-\newcommand{\JOURS}{1} % CHANGE-ME
-\newcommand{\PRIXTRANSP}{250} % CHANGE-ME
-\newcommand{\PRIXPLACEPLEIN}{0} % CHANGE-ME
-\newcommand{\PRIXPLACESREDUIT}{0} % CHANGE-ME
-\newcommand{\PRIXDEMANDEURSEMPLOI}{0} % CHANGE-ME
-\newcommand{\CATEGORIESREDUIT}{tout le monde} % CHANGE-ME
-\newcommand{\PRIXPRESTA}{350} % CHANGE-ME
-\newcommand{\PAIEMENTPRESTA}{cheque} % 'cheque' ou 'le texte a afficher'
-\newcommand{\DATEMONTAGE}{6 septembre 2014}
-\newcommand{\HEUREMONTAGE}{09:00}
-\newcommand{\DATEDEMONTAGE}{6 septembre 2014}
-\newcommand{\HEUREDEMONTAGE}{14:00}
-\newcommand{\NBEX}{2} % CHANGE-ME
 
-\newcommand{\TECHBAND}{
-L'\'equipe au complet de \emph{\BANDNAME{}} pour le spectacle \emph{\NOMSPECTACLE{}} est de \NBBANDPERS{} personne\ifthenelse{\NBBANDPERS>1}{s}{}.
-Se r\'ef\'erer \`a la fiche technique.
+%========================================
+% LA(LES) REPRÉSENTATION(S)
+%========================================
+\newcommand{\RepresentationAnnee}{2014}
+\newcommand{\RepresentationMois}{10}
+\newcommand{\RepresentationJour}{25}
+\newcommand{\RepresentationHeure}{20:30}
+\newcommand{\RepresentationLieuNom}{CHANGE-ME}
+\newcommand{\RepresentationLieuAdresse}{CHANGE-ME}
+\newcommand{\RepresentationLieuCodePostal}{93290}
+\newcommand{\RepresentationLieuVille}{Tremblay-en-France}
+\newcommand{\RepresentationLieuPays}{France}
+\newcommand{\RepresentationLieuNombrePlacesAssises}{150000000}
+\newcommand{\RepresentationLieuNombrePlacesDebout}{100000000}
+\newcommand{\RepresentationLieuNombrePlacesExonerees}{10000000}
+\newcommand{\RepresentationLieuNombreLits}{1}
+\newcommand{\RepresentationLieuNombreNuits}{1}
+\newcommand{\RepresentationLieuNombreRepasQuotidiens}{2}
+\newcommand{\RepresentationLieuNombreJours}{1}
+\newcommand{\RepresentationNombre}{1}
+\newcommand{\RepresentationMontageAnnee}{\RepresentationAnnee}
+\newcommand{\RepresentationMontageMois}{\RepresentationMois}
+\newcommand{\RepresentationMontageJour}{\RepresentationJour}
+\newcommand{\RepresentationMontageHeure}{12:00}
+\newcommand{\RepresentationDemontageAnnee}{\RepresentationAnnee}
+\newcommand{\RepresentationDemontageMois}{\RepresentationMois}
+\newcommand{\RepresentationDemontageJour}{\RepresentationJour}
+\newcommand{\RepresentationDemontageHeure}{23:00}
+\newcommand{\RepresentationInformationsComplementaires}{CHANGE-ME}
+\newcommand{\RepresentationMateriel}{
+%---RepresentationMateriel---
+  \begin{itemize}
+      \item 1 x syst\`eme de diffusion avec caisson de basses, style
+      NEXO 2xPS15 + 1xSR15
+      \item 6 x PAR 64 (dont : 2 sur platine, 2 sur pied, 2 sur gril en douche sur le mur)
+  \end{itemize}
 }
+
+%========================================
+% LA PRESTATION
+%========================================
+\newcommand{\PrestationTransportCout}{350}
+\newcommand{\PrestationTarifPlein}{0}
+\newcommand{\PrestationTarifReduit}{0}
+\newcommand{\PrestationTarifDemandeurEmploi}{0}
+\newcommand{\PrestationTarifCategoriesReduit}{tout le monde}
+\newcommand{\PrestationPrixVente}{700}
+\newcommand{\PrestationMoyenPaiement}{cheque} % 'cheque' ou 'le texte a afficher'
+\newcommand{\PrestationPubliciteDateLimiteAnnee}{2014} % Date limite de fourniture de la publicite
+\newcommand{\PrestationPubliciteDateLimiteMois}{10}
+\newcommand{\PrestationPubliciteDateLimiteJour}{18}
+\newcommand{\PrestationPubliciteNombreAffiches}{0}
+\newcommand{\PrestationPubliciteNombreFlyers}{0}
+\newcommand{\PrestationPubliciteNombrePressBook}{0}
+\newcommand{\PrestationPubliciteNombrePhotos}{2}
 
 %%% Local Variables: 
 %%% mode: latex
