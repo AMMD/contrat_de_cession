@@ -44,6 +44,13 @@ Nouveau contrat depuis un existant
 14. on pousse sur le dépôt central la suppression de branche : `git push origin --delete nomDuGroupe-lieu-date-WIP`
 
 
+Modification d'un contrat de cession
+====================================
+
+1. éditer et modifier le fichier `config.tex` en accord avec les informations en votre possession
+2. vérifier que toutes les variables sont adaptées et qu'il ne reste pas de `CHANGE-ME`
+3. compiler le document
+
 Compilation d'un contrat de cession
 ===================================
 
