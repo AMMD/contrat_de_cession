@@ -14,8 +14,8 @@ Nouveau contrat vierge
 2. on se déplace dans le nouveau répertoire créé : `cd contrat_de_cession`
 3. création de la nouvelle branche de travail : `git checkout -b nomDuGroupe-lieu-date-WIP`
 4. réaliser les modifications dans le fichier `config.tex`
-5. modifier les articles du contrat dans le fichier `main.tex` (si besoin, et en discussion avec l'organisateur)
-6. ajouter les fichiers modifiés à la liste de la prochaine validation git : `git add config.tex main.tex`
+5. modifier les articles du contrat dans le fichier `contrat_de_cession.tex` (si besoin, et en discussion avec l'organisateur)
+6. ajouter les fichiers modifiés à la liste de la prochaine validation git : `git add config.tex contrat_de_cession.tex`
 7. valider les modifications faites dans git : `git commit -m "Message de validation"`
 8. pousser les validation sur le dépôt central : `git push origin nomDuGroupe-lieu-date-WIP`
 9. refaire les points 4, 5, 6, 7 et 8 tant que le contrat n'est pas validé par les deux partenaires (tourneur et organisateur)
@@ -33,8 +33,8 @@ Nouveau contrat depuis un existant
 3. on change de branche pour aller dans celle qui contient déjà des informations : `git checkout branche-ou-tag-existant`
 4. création de la nouvelle branche de travail : `git checkout -b nomDuGroupe-lieu-date-WIP`
 5. réaliser les modifications dans le fichier `config.tex`
-6. modifier les articles du contrat dans le fichier `main.tex` (si besoin, et en discussion avec l'organisateur)
-7. ajouter les fichiers modifiés à la liste de la prochaine validation git : `git add config.tex main.tex`
+6. modifier les articles du contrat dans le fichier `contrat_de_cession.tex` (si besoin, et en discussion avec l'organisateur)
+7. ajouter les fichiers modifiés à la liste de la prochaine validation git : `git add config.tex contrat_de_cession.tex`
 8. valider les modifications faites dans git : `git commit -m "Message de validation"`
 9. pousser les validation sur le dépôt central : `git push origin nomDuGroupe-lieu-date-WIP`
 10. refaire les points 4, 5, 6, 7 et 8 tant que le contrat n'est pas validé par les deux partenaires (tourneur et organisateur)
@@ -54,9 +54,9 @@ Modification d'un contrat de cession
 Compilation d'un contrat de cession
 ===================================
 
-1. première compilation LaTeX : `pdflatex main`
-2. deuxième compilation LaTeX pour avoir les références internes correctes : `pdflatex main`
-3. affichage du contrat de cession : `evince main.pdf`
+1. première compilation LaTeX : `pdflatex contrat_de_cession`
+2. deuxième compilation LaTeX pour avoir les références internes correctes : `pdflatex contrat_de_cession`
+3. affichage du contrat de cession : `evince contrat_de_cession.pdf`
 
 
 Ajout du contrat de cession validé à la facture dans le Dolibarr
@@ -64,5 +64,5 @@ Ajout du contrat de cession validé à la facture dans le Dolibarr
 
 1. récupérer la version du contrat de cession adaptée (Cf. Nouveau contrat)
 2. compiler le contrat de cession (Cf. Compilation d'un contrat de cession)
-3. renommer le fichier de contrat de cession : `mv main.pdf nomDuGroup-lieu-date.pdf`
+3. renommer le fichier de contrat de cession : `mv contrat_de_cession.pdf nomDuGroupe-lieu-date.pdf`
 4. charger en tant que *fichier joint* le fichier `nomDuGroupe-lieu-date.pdf` à la facture client
